@@ -7,8 +7,8 @@ phases:
   build:
     commands:
       - echo "Building the application..."
- post_build:
-   commands:
-     - echo "Post-build steps..."
+  post_build:
+    commands:
+      - echo "Post-build steps..."
 artifacts:
   files: '**/*'
