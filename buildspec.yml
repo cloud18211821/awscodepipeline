@@ -1,11 +1,14 @@
-version: 0.0
+version: 0.2
 
-Resources:
-
-  - myS3Bucket:
-
-      Type: "AWS::S3::Bucket"
-
-      Properties:
-
-        BucketName: githubtoaws123
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies..."
+  build:
+    commands:
+      - echo "Building the application..."
+ post_build:
+   commands:
+     - echo "Post-build steps..."
+artifacts:
+  files: '**/*'
