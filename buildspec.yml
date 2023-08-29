@@ -1,0 +1,11 @@
+version: 0.0
+
+Resources:
+
+  - myS3Bucket:
+
+      Type: "AWS::S3::Bucket"
+
+      Properties:
+
+        BucketName: githubtoaws123
